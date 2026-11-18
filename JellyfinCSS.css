@@ -1344,3 +1344,52 @@ input.emby-checkbox:focus-visible ~ .checkboxOutline {
         font-size: 16px !important;
     }
 }
+
+/* ==================================================
+   RAIDTECH — CORRECTIF CIBLÉ DU BOUTON PASSKEY
+   ==================================================
+   Les règles précédentes ont conservé une largeur de 50 % et autorisé
+   le retour à la ligne. Ce correctif final donne au bouton sa propre
+   ligne, la largeur complète du formulaire et une hauteur de 49 px.
+   L’icône 🔑 déjà présente dans le HTML est conservée : on supprime
+   seulement l’icône Material Icons ajoutée par ::before.
+*/
+#loginPage #__twofactor_passkey_btn {
+    position: static !important;
+    display: flex !important;
+    float: none !important;
+    clear: both !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: 49px !important;
+    min-height: 49px !important;
+    margin: 0 0 10px !important;
+    padding: 8px 12px !important;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+}
+
+#loginPage #__twofactor_passkey_btn .tfa-icon {
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+    margin: 0 7px 0 0 !important;
+    white-space: nowrap !important;
+}
+
+#loginPage #__twofactor_passkey_btn [data-i18n-key="tfa.login.btn_passkey"] {
+    display: inline-block !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+}
+
+#loginPage #__twofactor_passkey_btn::before {
+    content: none !important;
+    display: none !important;
+}
