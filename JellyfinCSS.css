@@ -1,0 +1,1346 @@
+/* ==================================================
+   RAIDTECH MEDIA SERVER - CUSTOM CSS
+   ================================================== */
+
+
+/* ==================================================
+   01 - MÉDIAS : COINS ARRONDIS
+   ================================================== */
+
+.cardImageContainer,
+.cardContent,
+.cardScalable,
+.cardImageContainer img {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+
+/* ==================================================
+   02 - BARRE DE NAVIGATION TRANSPARENTE
+   ================================================== */
+
+header.MuiAppBar-root {
+    background: rgba(20, 20, 20, 0.25) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+
+/* ==================================================
+   03 - BANDEAU MÉDIA TRANSPARENT
+   ================================================== */
+
+.detailRibbon,
+.detailPagePrimaryContainer {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ==================================================
+   04 - ICÔNES DES ONGLETS PERSONNALISÉS
+   ================================================== */
+
+#customTabButton_0::before { content: "bookmark"; }
+#customTabButton_1::before { content: "bookmarks"; }
+#customTabButton_2::before { content: "playlist_add_check"; }
+#customTabButton_3::before { content: "timeline"; }
+#customTabButton_4::before { content: "calendar_month"; }
+
+[id^="customTabButton_"]::before {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
+/* ==================================================
+   05 - ICÔNES DU MENU LATÉRAL
+   ================================================== */
+
+#customTabDrawerButton_0::before,
+#customTabDrawerButton_1::before,
+#customTabDrawerButton_2::before,
+#customTabDrawerButton_3::before,
+#customTabDrawerButton_4::before {
+    font-family: "Material Icons" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+#customTabDrawerButton_0::before { content: "bookmark"; }
+#customTabDrawerButton_1::before { content: "bookmarks"; }
+#customTabDrawerButton_2::before { content: "playlist_add_check"; }
+#customTabDrawerButton_3::before { content: "timeline"; }
+#customTabDrawerButton_4::before { content: "calendar_month"; }
+
+
+/* ==================================================
+   06 - 3D MOVIE POSTER : CORRECTIONS
+   ================================================== */
+
+#itemDetailPage .detailImageContainer .card,
+#itemDetailPage .detailImageContainer .cardBox,
+#itemDetailPage .detailImageContainer .cardPadder,
+#itemDetailPage .detailImageContainer .cardScalable,
+#itemDetailPage .detailImageContainer .cardImageContainer {
+    contain: none !important;
+    overflow: visible !important;
+}
+
+
+/* ==================================================
+   07 - AFFICHES 3D : COINS ARRONDIS
+   ================================================== */
+
+#itemDetailPage .detailImageContainer .cardImageContainer {
+    border-radius: 12px !important;
+    clip-path: inset(0 round 12px);
+}
+
+
+/* ==================================================
+   08 - JELLYFRAME : POSITION DES DRAPEAUX
+   ================================================== */
+
+#itemDetailPage .je-tag-host .language-overlay-container {
+    transform: translate(8px, -8px);
+}
+
+
+/* ==================================================
+   09 - MENU UTILISATEUR : STYLE RAIDTECH
+   ================================================== */
+
+.MuiPopover-paper.MuiMenu-paper {
+    background: rgba(15, 15, 15, 0.8) !important;
+    background-image: none !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55) !important;
+    overflow: hidden !important;
+    min-width: 230px !important;
+}
+
+.MuiMenu-list {
+    padding: 7px !important;
+}
+
+.MuiMenuItem-root {
+    border-radius: 9px !important;
+    margin: 2px 0 !important;
+    min-height: 42px !important;
+    padding: 9px 12px !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+.MuiMenuItem-root:hover {
+    background: rgba(255, 255, 255, 0.09) !important;
+    transform: translateX(3px);
+}
+
+.MuiListItemIcon-root {
+    color: rgba(255, 255, 255, 0.7) !important;
+    min-width: 38px !important;
+}
+
+.MuiListItemText-primary {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+.MuiMenu-list hr {
+    border: none !important;
+    height: 1px !important;
+    background: rgba(255, 255, 255, 0.10) !important;
+    margin: 7px 5px !important;
+}
+
+.MuiMenuItem-root:active {
+    background: rgba(255, 255, 255, 0.14) !important;
+}
+
+.MuiTouchRipple-root {
+    opacity: 0.15;
+}
+
+
+/* ==================================================
+   10 - MENU LATÉRAL : PANNEAU FLOTTANT
+   ================================================== */
+
+.MuiDrawer-paper.MuiPaper-root {
+    position: fixed !important;
+    top: 50% !important;
+    bottom: auto !important;
+    left: 8px !important;
+    width: 280px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100dvh - 20px) !important;
+    box-sizing: border-box !important;
+    translate: 0 -50% !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background: rgba(15, 15, 15, 0.8) !important;
+    background-color: rgba(15, 15, 15, 0.8) !important;
+    background-image: none !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+}
+
+.MuiDrawer-paper > .MuiBox-root[role="presentation"] {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    flex: 0 0 auto !important;
+    overflow: visible !important;
+}
+
+.MuiDrawer-paper .MuiList-root {
+    flex: 0 0 auto !important;
+    height: auto !important;
+}
+
+.MuiDrawer-paper .jellyfinEnhancedSection {
+    flex: 0 0 auto !important;
+}
+
+.MuiDrawer-paper::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+/* ==================================================
+   11 - ESPACEMENT DE L'EN-TÊTE RAIDTECH
+   ================================================== */
+
+.MuiDrawer-paper > .MuiBox-root[role="presentation"]
+> .MuiList-root:first-child
+> .MuiListItem-root:first-child {
+    margin-bottom: 8px !important;
+}
+
+
+/* ==================================================
+   12 - BOUTONS PLUS COURTS
+   ================================================== */
+
+.MuiDrawer-paper .MuiListItemButton-root {
+    width: calc(100% - 20px) !important;
+    margin: 2px 10px !important;
+    box-sizing: border-box !important;
+}
+
+.MuiDrawer-paper .navMenuOption {
+    display: flex !important;
+    width: calc(100% - 20px) !important;
+    margin: 2px 10px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* ==================================================
+   13 - HOVER RAIDTECH
+   ================================================== */
+
+.MuiDrawer-paper .MuiListItemButton-root,
+.MuiDrawer-paper .navMenuOption {
+    border-radius: 9px !important;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+.MuiDrawer-paper .MuiListItemButton-root:hover,
+.MuiDrawer-paper .navMenuOption:hover {
+    background: rgba(255, 255, 255, 0.09) !important;
+    transform: translateX(3px) !important;
+}
+
+.MuiDrawer-paper .MuiListItemButton-root.Mui-selected {
+    border-radius: 9px !important;
+}
+
+.MuiDrawer-paper .MuiListItemButton-root:hover .MuiTypography-root,
+.MuiDrawer-paper .navMenuOption:hover .navMenuOptionText {
+    color: white !important;
+}
+
+
+/* ==================================================
+   14 - BACKDROP : TRANSPARENT
+   ================================================== */
+
+.MuiDrawer-root .MuiBackdrop-root {
+    background: transparent !important;
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
+}
+
+
+/* ==================================================
+   RAIDTECH - PAGE PROFIL GLASS DESIGN
+   ================================================== */
+
+#userProfilePage {
+    background: transparent !important;
+}
+
+#userProfilePage .readOnlyContent {
+    background: rgba(20, 20, 20, 0.72) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255,255,255,0.09) !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25) !important;
+}
+
+#userProfilePage img {
+    border-radius: 50% !important;
+}
+
+#userProfilePage input,
+#userProfilePage textarea,
+#userProfilePage select,
+#userProfilePage .emby-input {
+    background: rgba(35,35,35,0.75) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+    padding: 10px 12px !important;
+    transition: all 0.2s ease !important;
+}
+
+#userProfilePage input:focus,
+#userProfilePage textarea:focus,
+#userProfilePage select:focus {
+    background: rgba(45,45,45,0.9) !important;
+    border-color: rgba(255,255,255,0.35) !important;
+    outline: none !important;
+}
+
+#userProfilePage .emby-button {
+    border-radius: 10px !important;
+    transition: all 0.2s ease !important;
+}
+
+#userProfilePage .emby-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+}
+
+#userProfilePage .button-submit,
+#userProfilePage .emby-button-submit {
+    background: rgba(255,255,255,0.14) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+#userProfilePage label,
+#userProfilePage h1,
+#userProfilePage h2,
+#userProfilePage h3 {
+    color: rgba(255,255,255,0.92) !important;
+}
+
+#userProfilePage hr {
+    border-color: rgba(255,255,255,0.10) !important;
+}
+
+
+/* ==================================================
+   RAIDTECH - PROFIL SPATIAL
+   ================================================== */
+
+#userProfilePage {
+    position: relative !important;
+    isolation: isolate;
+    background: transparent !important;
+}
+
+#userProfilePage::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(
+            rgba(12, 10, 9, 0.48),
+            rgba(12, 10, 9, 0.72)
+        ),
+        url("https://img-data.raidtech.xyz/-uN9QY2jqNn");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#userProfilePage .readOnlyContent {
+    background: rgba(15, 13, 12, 0.65) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: 16px !important;
+}
+
+#userProfilePage input {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-radius: 8px !important;
+}
+
+
+/* ==================================================
+   RAIDTECH - PROFILE BUTTONS & INPUTS
+   ================================================== */
+
+/* Boutons */
+
+#userProfilePage .emby-button {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 9px !important;
+    min-height: 40px !important;
+    padding: 10px 16px !important;
+    background: rgba(35, 31, 29, 0.78) !important;
+    color: rgba(255,255,255,0.92) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    border-radius: 10px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    transition: all 0.22s ease !important;
+}
+
+#userProfilePage .emby-button:hover {
+    background: rgba(190, 105, 55, 0.22) !important;
+    border-color: rgba(230, 145, 90, 0.45) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.25) !important;
+}
+
+#userProfilePage .emby-button:active {
+    transform: scale(0.97) !important;
+}
+
+/* Icônes des boutons */
+
+#userProfilePage .btnDeleteImage::before {
+    content: "delete";
+}
+
+#userProfilePage .btnSelectImage::before {
+    content: "image";
+}
+
+#userProfilePage .button-submit::before,
+#userProfilePage .emby-button-submit::before {
+    content: "save";
+}
+
+#userProfilePage .emby-button::before {
+    font-family: "Material Icons" !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+}
+
+/* Champs de saisie */
+
+#userProfilePage input,
+#userProfilePage textarea,
+#userProfilePage select,
+#userProfilePage .emby-input {
+    box-sizing: border-box !important;
+    min-height: 42px !important;
+    padding: 10px 13px !important;
+    background: rgba(20, 19, 18, 0.72) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    border-radius: 9px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2) !important;
+    transition: all 0.22s ease !important;
+}
+
+#userProfilePage input:hover,
+#userProfilePage textarea:hover,
+#userProfilePage select:hover {
+    border-color: rgba(220, 145, 95, 0.35) !important;
+    background: rgba(35, 29, 26, 0.85) !important;
+}
+
+#userProfilePage input:focus,
+#userProfilePage textarea:focus,
+#userProfilePage select:focus {
+    background: rgba(35, 27, 23, 0.92) !important;
+    border-color: rgba(220, 145, 95, 0.75) !important;
+    box-shadow:
+        0 0 0 2px rgba(220, 145, 95, 0.12),
+        0 0 15px rgba(220, 145, 95, 0.08) !important;
+    outline: none !important;
+}
+
+#userProfilePage input::placeholder,
+#userProfilePage textarea::placeholder {
+    color: rgba(255,255,255,0.38) !important;
+}
+
+/* Labels */
+
+#userProfilePage label {
+    color: rgba(255,255,255,0.75) !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin-bottom: 7px !important;
+}
+
+/* Bouton principal du profil */
+
+#userProfilePage .button-submit,
+#userProfilePage .emby-button-submit {
+    background: linear-gradient(
+        135deg,
+        rgba(183, 104, 62, 0.95),
+        rgba(125, 68, 45, 0.95)
+    ) !important;
+    border: 1px solid rgba(255, 190, 140, 0.25) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(120, 60, 30, 0.18) !important;
+}
+
+#userProfilePage .button-submit:hover,
+#userProfilePage .emby-button-submit:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(205, 125, 78, 1),
+        rgba(150, 82, 52, 1)
+    ) !important;
+}
+
+
+/* ==================================================
+   RAIDTECH - PROFILE FINAL DESIGN
+   ================================================== */
+
+/* Centrage du profil */
+
+#userProfilePage {
+    min-height: calc(100vh - 60px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    padding: 30px 16px !important;
+}
+
+#userProfilePage .readOnlyContent {
+    width: 100% !important;
+    max-width: 560px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* Style commun des boutons */
+
+#userProfilePage .emby-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 9px !important;
+    min-height: 40px !important;
+    padding: 9px 16px !important;
+    background: rgba(30, 27, 25, 0.85) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    border-radius: 9px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+#userProfilePage .emby-button:hover {
+    background: rgba(190, 105, 55, 0.22) !important;
+    border-color: rgba(230, 145, 90, 0.5) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.25) !important;
+}
+
+#userProfilePage .emby-button:active {
+    transform: scale(0.97) !important;
+}
+
+/* Icônes */
+
+#userProfilePage .btnAddImage::before {
+    content: "add_photo_alternate";
+}
+
+#userProfilePage .btnDeleteImage::before {
+    content: "delete_outline";
+}
+
+#userProfilePage .btnSelectImage::before {
+    content: "photo_library";
+}
+
+#userProfilePage .btnResetPassword::before {
+    content: "lock_reset";
+}
+
+#userProfilePage .button-submit::before,
+#userProfilePage .emby-button-submit::before {
+    content: "save";
+}
+
+#userProfilePage .emby-button::before {
+    font-family: "Material Icons" !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+}
+
+/* Bouton principal */
+
+#userProfilePage .button-submit,
+#userProfilePage .emby-button-submit {
+    background: linear-gradient(135deg, #b96e46, #8e4d32) !important;
+    border: 1px solid rgba(255,190,140,0.3) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(120,60,30,0.2) !important;
+}
+
+#userProfilePage .button-submit:hover,
+#userProfilePage .emby-button-submit:hover {
+    background: linear-gradient(135deg, #d18455, #a65c3b) !important;
+}
+
+/* Champs de saisie */
+
+#userProfilePage input,
+#userProfilePage textarea,
+#userProfilePage select,
+#userProfilePage .emby-input {
+    width: 100% !important;
+    min-height: 42px !important;
+    box-sizing: border-box !important;
+}
+
+#userProfilePage .inputContainer {
+    margin-bottom: 18px !important;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    #userProfilePage {
+        justify-content: flex-start !important;
+        padding: 20px 12px !important;
+    }
+
+    #userProfilePage .readOnlyContent {
+        max-width: 100% !important;
+    }
+}
+
+
+/* ==================================================
+   RAIDTECH - PROFILE SPACING FIX
+   ================================================== */
+
+#userProfilePage .readOnlyContent {
+    padding-top: 12px !important;
+    padding-bottom: 16px !important;
+}
+
+#userProfilePage .readOnlyContent h1,
+#userProfilePage .readOnlyContent h2 {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    line-height: 1.3 !important;
+}
+
+#userProfilePage .readOnlyContent .emby-button {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+#userProfilePage .btnAddImage,
+#userProfilePage .btnDeleteImage,
+#userProfilePage .btnSelectImage {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+#userProfilePage .inputContainer {
+    margin-bottom: 22px !important;
+}
+
+#userProfilePage .button-submit,
+#userProfilePage .emby-button-submit {
+    margin-top: 12px !important;
+    margin-bottom: 10px !important;
+}
+
+#userProfilePage .button-submit ~ .emby-button,
+#userProfilePage .emby-button-submit ~ .emby-button {
+    margin-top: 7px !important;
+}
+
+
+/* ==================================================
+   RAIDTECH — PAGE DE CONNEXION JELLYFIN
+   ================================================== */
+
+#loginPage {
+    --raidtech-login-accent: #16b8e8;
+    --raidtech-login-accent-hover: #39c8ef;
+    --raidtech-login-panel: rgba(18, 17, 16, 0.78);
+    --raidtech-login-border: rgba(255, 255, 255, 0.12);
+    --raidtech-login-text: rgba(255, 255, 255, 0.94);
+    --raidtech-login-muted: rgba(255, 255, 255, 0.68);
+
+    box-sizing: border-box !important;
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+    margin-top: 0 !important;
+    padding: clamp(76px, 9vh, 112px) 16px 32px !important;
+    overflow-y: auto !important;
+    -webkit-mask: none !important;
+    mask: none !important;
+}
+
+/* Panneau du formulaire */
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    box-sizing: border-box !important;
+    width: min(100%, 480px) !important;
+    max-width: 480px !important;
+    margin: 0 auto !important;
+    padding: clamp(24px, 4vw, 36px) !important;
+    color: var(--raidtech-login-text) !important;
+    text-align: left !important;
+    background: var(--raidtech-login-panel) !important;
+    border: 1px solid var(--raidtech-login-border) !important;
+    border-radius: 20px !important;
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(125%) !important;
+    backdrop-filter: blur(16px) saturate(125%) !important;
+}
+
+/* Titre */
+
+#loginPage h1 {
+    margin: 0 0 24px !important;
+    color: var(--raidtech-login-text) !important;
+    font-size: clamp(22px, 3vw, 28px) !important;
+    font-weight: 650 !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Libellés */
+
+#loginPage .inputLabel {
+    display: block !important;
+    margin: 0 0 7px !important;
+    color: var(--raidtech-login-muted) !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+/* Espacement des champs */
+
+#loginPage .inputContainer {
+    margin: 0 0 18px !important;
+}
+
+/* Champs de saisie */
+
+#loginPage .emby-input,
+#loginPage input.emby-input {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: 46px !important;
+    padding: 11px 13px !important;
+    color: var(--raidtech-login-text) !important;
+    background: rgba(255, 255, 255, 0.075) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease !important;
+}
+
+#loginPage .emby-input:hover,
+#loginPage input.emby-input:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.26) !important;
+}
+
+#loginPage .emby-input:focus,
+#loginPage input.emby-input:focus {
+    background: rgba(255, 255, 255, 0.11) !important;
+    border-color: var(--raidtech-login-accent) !important;
+    box-shadow: 0 0 0 3px rgba(22, 184, 232, 0.18) !important;
+    outline: none !important;
+}
+
+#loginPage .emby-input::placeholder,
+#loginPage input.emby-input::placeholder {
+    color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Remember Me */
+
+#loginPage .checkboxContainer {
+    margin: 2px 0 18px !important;
+    color: var(--raidtech-login-muted) !important;
+}
+
+/* Boutons */
+
+#loginPage .emby-button {
+    box-sizing: border-box !important;
+    min-height: 42px !important;
+    border-radius: 10px !important;
+    transition:
+        background-color 180ms ease,
+        border-color 180ms ease,
+        transform 180ms ease,
+        box-shadow 180ms ease !important;
+}
+
+/* Bouton principal */
+
+#loginPage .button-submit,
+#loginPage .emby-button-submit {
+    color: #06141a !important;
+    background: var(--raidtech-login-accent) !important;
+    border: 1px solid transparent !important;
+    font-weight: 700 !important;
+    box-shadow: 0 5px 18px rgba(22, 184, 232, 0.18) !important;
+}
+
+#loginPage .button-submit:hover,
+#loginPage .emby-button-submit:hover {
+    color: #041217 !important;
+    background: var(--raidtech-login-accent-hover) !important;
+    box-shadow: 0 7px 22px rgba(22, 184, 232, 0.27) !important;
+}
+
+/* Boutons secondaires */
+
+#loginPage .raised:not(.button-submit):not(.emby-button-submit) {
+    color: var(--raidtech-login-text) !important;
+    background: rgba(255, 255, 255, 0.09) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+}
+
+#loginPage .raised:not(.button-submit):not(.emby-button-submit):hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#loginPage .raised::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Liens */
+
+#loginPage a,
+#loginPage .button-link {
+    color: var(--raidtech-login-muted) !important;
+    transition: color 180ms ease !important;
+}
+
+#loginPage a:hover,
+#loginPage .button-link:hover {
+    color: var(--raidtech-login-accent-hover) !important;
+}
+
+/* Espacement des actions */
+
+#loginPage form .emby-button,
+#loginPage form .raised {
+    margin-top: 5px !important;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    #loginPage {
+        padding:
+            max(76px, env(safe-area-inset-top, 0px) + 60px)
+            14px
+            max(24px, env(safe-area-inset-bottom, 0px)) !important;
+    }
+
+    #loginPage .padded-left.padded-right.padded-bottom-page {
+        width: 100% !important;
+        max-width: 440px !important;
+        padding: 24px 20px !important;
+        border-radius: 18px !important;
+    }
+
+    #loginPage h1 {
+        margin-bottom: 20px !important;
+    }
+
+    #loginPage .emby-button {
+        min-height: 46px !important;
+    }
+}
+
+@media (max-height: 620px) {
+    #loginPage {
+        padding-top: 64px !important;
+        padding-bottom: 20px !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #loginPage .emby-input,
+    #loginPage .emby-button,
+    #loginPage a {
+        transition: none !important;
+    }
+}
+
+
+/* ==================================================
+   RAIDTECH — FINITIONS DE LA PAGE DE CONNEXION
+   ================================================== */
+
+/* Titre de marque */
+
+#loginPage h1 {
+    font-size: 0 !important;
+    text-align: center !important;
+}
+
+#loginPage h1::after {
+    content: "Raidtech Media Server";
+    color: rgba(255, 255, 255, 0.96);
+    font-size: clamp(24px, 3vw, 30px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+/* Libellés en anglais */
+
+#loginPage .inputLabel[for="txtManualName"],
+#loginPage .inputLabel[for="txtManualPassword"] {
+    font-size: 0 !important;
+}
+
+#loginPage .inputLabel[for="txtManualName"]::after {
+    content: "Username";
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 13px;
+}
+
+#loginPage .inputLabel[for="txtManualPassword"]::after {
+    content: "Password";
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 13px;
+}
+
+/* Passkey et Quick Connect côte à côte */
+
+#loginPage form {
+    position: relative !important;
+    padding-bottom: 58px !important;
+}
+
+#loginPage #__twofactor_passkey_btn,
+#loginPage .btnQuickConnect {
+    position: absolute !important;
+    bottom: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: calc(50% - 5px) !important;
+    min-width: 0 !important;
+    min-height: 48px !important;
+    margin: 0 !important;
+    padding: 8px 10px !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+}
+
+#loginPage #__twofactor_passkey_btn {
+    left: 0 !important;
+}
+
+#loginPage .btnQuickConnect {
+    right: 0 !important;
+}
+
+/* Icônes des boutons */
+
+#loginPage #__twofactor_passkey_btn::before,
+#loginPage .btnQuickConnect::before {
+    display: inline-block !important;
+    flex: 0 0 auto !important;
+    margin-right: 7px !important;
+    font-family: "Material Icons" !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+}
+
+#loginPage #__twofactor_passkey_btn::before {
+    content: "key" !important;
+}
+
+#loginPage .btnQuickConnect::before {
+    content: "devices" !important;
+}
+
+/* Discord : couleur officielle, logo et texte conservé */
+
+#loginPage a#login {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 9px !important;
+    color: #fff !important;
+    background: #5865F2 !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 10px !important;
+    font-weight: 650 !important;
+    text-decoration: none !important;
+}
+
+#loginPage a#login:hover {
+    color: #fff !important;
+    background: #4752C4 !important;
+}
+
+#loginPage a#login::before {
+    content: "" !important;
+    display: inline-block !important;
+    flex: 0 0 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 127.14 96.36'%3E%3Cpath fill='%23fff' d='M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.95 97.68 97.68 0 0 0-29.08 0A72.37 72.37 0 0 0 45.67 0a105.89 105.89 0 0 0-26.25 8.09C2.8 32.65-1.71 56.6.54 80.21A105.73 105.73 0 0 0 32.71 96.3a77.7 77.7 0 0 0 6.89-11.12 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2.04a75.76 75.76 0 0 0 64.32 0c.87.7 1.76 1.38 2.66 2.04a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.11 105.25 105.25 0 0 0 32.19-16.08c2.64-27.38-4.52-51.1-18.9-72.15ZM42.45 65.69c-6.27 0-11.42-5.72-11.42-12.72s5.05-12.73 11.42-12.73 11.52 5.72 11.42 12.73c.01 7-5.05 12.72-11.42 12.72Zm42.24 0c-6.27 0-11.42-5.72-11.42-12.72s5.05-12.73 11.42-12.73 11.52 5.72 11.42 12.73c.01 7-5.05 12.72-11.42 12.72Z'/%3E%3C/svg%3E") !important;
+}
+
+#loginPage a#login .material-icons,
+#loginPage a#login .material-symbols {
+    display: none !important;
+}
+
+/* Remember Me : case et libellé alignés */
+
+#loginPage label.checkboxContainer.emby-checkbox-label {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 9px !important;
+    min-height: 24px !important;
+    margin: 2px 0 18px !important;
+    padding: 0 !important;
+    color: rgba(255, 255, 255, 0.78) !important;
+    line-height: 1.2 !important;
+}
+
+#loginPage label.checkboxContainer.emby-checkbox-label .emby-checkbox {
+    flex: 0 0 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+}
+
+#loginPage label.checkboxContainer.emby-checkbox-label .checkboxOutline {
+    flex: 0 0 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.42) !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+}
+
+#loginPage .emby-checkbox:checked + span + .checkboxOutline {
+    background: #16b8e8 !important;
+    border-color: #16b8e8 !important;
+}
+
+#loginPage .emby-checkbox:checked + span + .checkboxOutline::after {
+    border-color: #07171d !important;
+}
+
+/* Petits écrans */
+
+@media (max-width: 380px) {
+    #loginPage #__twofactor_passkey_btn,
+    #loginPage .btnQuickConnect {
+        padding: 6px !important;
+        font-size: 11px !important;
+    }
+
+    #loginPage #__twofactor_passkey_btn::before,
+    #loginPage .btnQuickConnect::before {
+        margin-right: 4px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #loginPage .checkboxOutline {
+        transition: none !important;
+    }
+}
+/* ==================================================
+   RAIDTECH — CORRECTIF PAGE DE CONNEXION
+   ================================================== */
+
+/* Le formulaire reprend une disposition normale */
+#loginPage form {
+    display: block !important;
+    position: static !important;
+    padding-bottom: 0 !important;
+    overflow: auto !important;
+}
+
+/* Passkey et Quick Connect sur une même ligne */
+#loginPage #__twofactor_passkey_btn,
+#loginPage .btnQuickConnect {
+    position: static !important;
+    display: inline-flex !important;
+    float: left !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: calc(50% - 5px) !important;
+    min-width: 0 !important;
+    min-height: 48px !important;
+    margin: 0 0 10px !important;
+    padding: 8px 10px !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+}
+
+/* Espacement entre Passkey et Quick Connect */
+#loginPage #__twofactor_passkey_btn {
+    margin-right: 10px !important;
+}
+
+/* Les éléments suivants reprennent la pleine largeur */
+#loginPage form .btnForgotPassword,
+#loginPage form .btnSelectServer {
+    clear: both !important;
+}
+
+/* Icônes des deux boutons */
+#loginPage #__twofactor_passkey_btn::before,
+#loginPage .btnQuickConnect::before {
+    display: inline-block !important;
+    flex: 0 0 auto !important;
+    margin-right: 7px !important;
+    font-family: "Material Icons" !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+}
+
+#loginPage #__twofactor_passkey_btn::before {
+    content: "key" !important;
+}
+
+#loginPage .btnQuickConnect::before {
+    content: "devices" !important;
+}
+
+/* Retirer les pseudo-icônes accidentelles des autres boutons */
+#loginPage .button-submit::before,
+#loginPage #login::before,
+#loginPage .btnForgotPassword::before,
+#loginPage .btnSelectServer::before {
+    content: none !important;
+    display: none !important;
+}
+/* Remember Me — case à gauche, texte centré verticalement */
+#loginPage label.checkboxContainer.emby-checkbox-label {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    height: 24px !important;
+    min-height: 24px !important;
+    margin: 2px 0 18px !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+}
+
+/* Input natif : hors de la disposition, reste cliquable */
+#loginPage label.checkboxContainer .chkRememberLogin {
+    position: absolute !important;
+    left: 0 !important;
+    top: 2px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    z-index: 2 !important;
+    cursor: pointer !important;
+}
+
+/* Case à gauche */
+#loginPage label.checkboxContainer .checkboxOutline {
+    order: 0 !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 20px !important;
+    align-self: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    top: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Texte à droite, centré sur la case */
+#loginPage label.checkboxContainer .checkboxLabel {
+    order: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    align-self: center !important;
+    height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    line-height: 20px !important;
+    vertical-align: middle !important;
+}
+/* Jellyfin superpose parfois l’input natif et sa case visuelle.
+   L’input reste cliquable, mais ne participe pas à la disposition. */
+#loginPage label.checkboxContainer.emby-checkbox-label input.emby-checkbox {
+    position: absolute !important;
+    inset: 0 auto auto 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    z-index: 2 !important;
+    cursor: pointer !important;
+}
+
+#loginPage label.checkboxContainer.emby-checkbox-label .checkboxOutline {
+    position: relative !important;
+    flex: 0 0 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.42) !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+    box-sizing: border-box !important;
+}
+
+/* État coché */
+#loginPage label.checkboxContainer.emby-checkbox-label
+input.emby-checkbox:checked ~ .checkboxOutline {
+    border-color: #16b8e8 !important;
+    background: #16b8e8 !important;
+}
+
+/* État clavier */
+#loginPage label.checkboxContainer.emby-checkbox-label
+input.emby-checkbox:focus-visible ~ .checkboxOutline {
+    outline: 2px solid rgba(22, 184, 232, 0.65) !important;
+    outline-offset: 2px !important;
+}
+
+/* Petits écrans */
+@media (max-width: 380px) {
+    #loginPage #__twofactor_passkey_btn,
+    #loginPage .btnQuickConnect {
+        padding: 7px 5px !important;
+        font-size: 11px !important;
+    }
+
+    #loginPage #__twofactor_passkey_btn::before,
+    #loginPage .btnQuickConnect::before {
+        margin-right: 4px !important;
+        font-size: 16px !important;
+    }
+}
